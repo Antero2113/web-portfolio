@@ -1,4 +1,19 @@
 baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+languageCode = 'ru-ru'
+title = ' '
 theme = "blowfish"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[params]
+  defaultAppearance = "light"
+  autoSwitchAppearance = true
+
+[assets]
+  [[assets.css]]
+    href = "css/index.css"
+
+ignoreLogs = ['warning-goldmark-raw-html']
